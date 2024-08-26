@@ -10,7 +10,7 @@
   font: inherit;
 
   -webkit-font-smoothing: antialiased;
-  -mox-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
@@ -35,7 +35,7 @@
 
   --px-lg: 1.5rem;
   --py-base: 1rem;
-  --py-large: 1.5rem;
+  --py-lg: 1.5rem;
   --py-xl: 3rem;
 }
 
@@ -43,22 +43,21 @@ html {
   font-family: var(--ff-sans);
   font-weight: var(--fw-base);
   font-size: var(--fs-base);
-  list-style: 1.6;
+  line-height: 1.6;
   color: var(--text-color-primary);
-
-  scroll-behavior: smooth;
-
 }
 
 body {
   background-color: var(--bg-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.2;
   color: var(--text-color-primary);
   font-weight: var(--fw-bold);
-  letter-spacing: -0.04em;
+  letter-spacing: -0.04rem;
 }
 
 h1 {
@@ -70,7 +69,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--fs-xl);
+  font-size: var(--fs-lg);
 }
 
 a {
@@ -90,7 +89,7 @@ a:hover {
   color: transparent;
 }
 
-ul[role="list"] {
+ul[role='list'] {
   list-style: none;
 }
 
@@ -107,7 +106,7 @@ img {
 
     --px-lg: 2rem;
     --py-base: 1.5rem;
-    --py-large: 2.5rem;
+    --py-lg: 2.5rem;
     --py-xl: 5rem;
   }
 }
